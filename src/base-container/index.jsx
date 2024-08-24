@@ -37,7 +37,25 @@ const BaseContainer = ({ children, showWelcomeBanner, fullName }) => {
     );
   }
 
-
+  return (
+    <>
+      <div className="col-md-12 extra-large-screen-top-stripe" />
+      <div className="layout">
+        <MediaQuery maxWidth={breakpoints.small.maxWidth - 1}>
+          {showWelcomeBanner ? <AuthSmallLayout fullName={fullName} /> : <DefaultSmallLayout />}
+        </MediaQuery>
+        <MediaQuery minWidth={breakpoints.medium.minWidth} maxWidth={breakpoints.large.maxWidth - 1}>
+          {showWelcomeBanner ? <AuthMediumLayout fullName={fullName} /> : <DefaultMediumLayout />}
+        </MediaQuery>
+        <MediaQuery minWidth={breakpoints.extraLarge.minWidth}>
+          {showWelcomeBanner ? <AuthLargeLayout fullName={fullName} /> : <DefaultLargeLayout />}
+        </MediaQuery>
+        <div className={classNames('content', { 'align-items-center mt-0': showWelcomeBanner })}>
+          {children}
+        </div>
+      </div>
+    </>
+  );
 };
 
 BaseContainer.defaultProps = {
