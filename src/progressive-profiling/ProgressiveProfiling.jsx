@@ -251,7 +251,7 @@ const ProgressiveProfiling = (props) => {
               <div className="d-flex mt-4 mb-3">
                 <StatefulButton
                   type="submit"
-                  variant="brand"
+                  variant="danger"
                   className="pp-page__button-width"
                   state={submitState}
                   labels={{

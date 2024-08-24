@@ -181,7 +181,7 @@ const ResetPasswordPage = (props) => {
                   id="submit-new-password"
                   name="submit-new-password"
                   type="submit"
-                  variant="brand"
+                  variant="danger"
                   className="reset-password--button"
                   state={props.status}
                   labels={{
