@@ -3,6 +3,8 @@ import React from 'react';
 import { getConfig } from '@edx/frontend-platform';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { Hyperlink, Image } from '@openedx/paragon';
+import backgroundImage from './background.png'
+
 
 import messages from './messages';
 
@@ -12,7 +14,7 @@ const SmallLayout = () => {
   return (
     <span
       className="w-100 bg-primary-500 banner__image small-layout"
-      style={{ backgroundImage: `url(${getConfig().BANNER_IMAGE_SMALL})` }}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
 
       <div className="ml-5 mr-1 pb-3.5 pt-3.5">

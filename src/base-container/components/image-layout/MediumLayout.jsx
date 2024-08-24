@@ -3,6 +3,8 @@ import React from 'react';
 import { getConfig } from '@edx/frontend-platform';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { Hyperlink, Image } from '@openedx/paragon';
+import backgroundImage from './background.png'
+
 
 import './index.scss';
 import messages from './messages';
@@ -13,7 +15,7 @@ const MediumLayout = () => {
   return (
     <div
       className="w-100 mb-3 bg-primary-500 banner__image medium-layout"
-      style={{ backgroundImage: `url(${getConfig().BANNER_IMAGE_MEDIUM})` }}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
 
       <div className="ml-5 pb-4 pt-4">
