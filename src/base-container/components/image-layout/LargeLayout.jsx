@@ -21,10 +21,10 @@ const LargeLayout = () => {
       <div className="min-vh-100 p-5 d-flex align-items-end">
         <h1 className="display-2 mw-sm mb-3 d-flex flex-column flex-shrink-0 justify-content-center">
           <span className="text-light-500">
-            ГОЙДА
+            PT
           </span>
           <span className="text-warning-300">
-            гойда
+            EdTechLab
           </span>
         </h1>
       </div>

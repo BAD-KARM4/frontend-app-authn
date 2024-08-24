@@ -20,10 +20,10 @@ const SmallLayout = () => {
       <div className="ml-5 mr-1 pb-3.5 pt-3.5">
         <h1 className="display-2">
           <span className="text-light-500">
-            ГОЙДА
+            PT
           </span>
           <span className="text-warning-300">
-            гойда
+            EdTechLab
           </span>
         </h1>
       </div>
