@@ -367,7 +367,7 @@ const RegistrationPage = (props) => {
                 className="register-button mt-4 mb-4"
                 state={submitState}
                 labels={{
-                  default: buttonLabel,
+                  default: "Зарегистрироваться",
                   pending: '',
                 }}
                 onClick={handleSubmit}
